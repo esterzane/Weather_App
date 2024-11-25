@@ -9,8 +9,11 @@ h1 {
     padding-top: 5px;
     padding-bottom: 5px;
     font-size: 2rem;
-
+    font-family: "Rubik Scribble", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
+
 .container {
     display: flex;
     gap: 35px;
