@@ -3,6 +3,36 @@ body {
     width: 100%;
 }
 
-.days-forecast {
-    background-color: #487A7D;
+h1 { 
+    text-align: center;
+    background-color: #A6A3BE;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 2rem;
+
+}
+.container {
+    display: flex;
+    gap: 35px;
+    padding: 30px;
+}
+
+h3 {
+    color: #487A7D;
+
+}
+
+.weather-input input {
+    width: 100%;
+    height: 44px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 30rem;
+    
+}
+
+.weather-input input::placeholder {
+    text-shadow: #A6A3BE;
+    text-align: center;
+
 }
