@@ -39,3 +39,11 @@ h3 {
     text-align: center;
 
 }
+
+.weather-input button {
+    width: 100%;
+    padding: 10, 0;
+    cursor: pointer;
+    outline: none;
+}
+
