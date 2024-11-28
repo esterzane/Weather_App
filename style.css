@@ -1,6 +1,9 @@
 body {
     background-color: #DBDAE5;
     width: 100%;
+    font-family: "Gafata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 h1 { 
@@ -59,6 +62,9 @@ h3 {
 .weather-input input::placeholder {
     text-shadow: #A6A3BE;
     text-align: center;
+    font-family: "Gafata", sans-serif;
+    font-weight: 400;
+     font-style: normal;
 
 }
 
@@ -72,6 +78,9 @@ h3 {
     font-size: 0.9rem;
     background-color: #A6A3BE;
     border-radius: 6px;
+    font-family: "Gafata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 
 }
 .weather-input .location-btn {
@@ -80,4 +89,65 @@ h3 {
 }
 .weather-data {
     width:100%;
+}
+
+.current-weather {
+    background-color: #A6A3BE;
+    display: flex;
+    color: #4e487d;
+    width: 90%;
+    border-radius: 25px;
+    margin-top: 65px;
+    padding: 10px 60px 10px 10px;
+    justify-content: space-between;
+    font-family: "Gafata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.current-weather h2 {
+    font-size: 1.5rem; 
+
+}
+
+.current-weather h4 {
+    margin-top: -5px;
+    font-size: 1rem; 
+    font-weight: 300;
+}
+
+.current-weather .icon img {
+    max-width: 120px;
+    margin-top: 5px; 
+}
+
+.current-weather .icon h6 {
+    margin-top: -10px;
+    text-transform: capitalize; 
+}
+
+.day-forecast { 
+    font-size: 1.5rem;
+    margin: 20px 0; 
+   
+}
+
+.weather-cards {
+    display:flex;
+    gap: 25px; 
+    margin-left: -30px; 
+}
+
+.weather-cards .card {
+    list-style: none;
+    background: #a3b9be;
+    color: #4e487d;
+    padding: 18px 18px;
+    border-radius: 15px;
+    width: calc(100% / 5);
+}
+
+.weather-cards .card img {
+    max-width: 70px;
+    margin: 5px 0 -10px 0; 
 }
