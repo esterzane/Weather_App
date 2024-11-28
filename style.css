@@ -29,15 +29,23 @@ h3 {
 }
 
 .weather-input .seperator { 
-    height: 2.5px;
+    height: 1.5px;
     width:100%;
     margin: 25px 0;
     background: #bbb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.weather-input .seperator ::before {
-    content: "or"
-    color: #487A7D; 
+.weather-input .seperator::before {
+    content: "or";
+    color: #487a7d; 
+    font-size: 0.9rem;
+    padding: 0 15px;
+    background: #dbdae5; 
+    margin-top: -4px; 
+
 }
 .weather-input input {
     width: 100%;
