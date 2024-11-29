@@ -1,11 +1,11 @@
 const cityInput = document.querySelector(".city-input");
 const searchButton = document.querySelector(".search-btn");
 const weatherCardsDiv = document.quarySelector (".weather-cards");
-const API_KEY = "22038a70491f6e8a843fa6f83a67e41a"; // API key for OpenWeatherMap API
+const API_KEY = "22038a70491f6e8a843fa6f83a67e41a"; // 'PI key for OpenWeatherMap API
 
 const createWeatherCard(weatherItem) {
-    return "<li class="card">
-        < h3 > ($); { weatherItem.dt_text.split(" ")[0]; } </h3>;
+    return '<li class="card">
+        < h3 > (${ weatherItem.dt_text.split(" ")[0]}) </h3>;
             <img src="https://openweathermap.org/img/wn/${weatherItem.weather[0].icon}@2x.png" />;
             <h4> Temp: ${(weatherItem.main.temp - 273.1).toFixed(2)}°C</h4>;
             <h4>Wind: ${weatherItem.wind.speed} km/h</h4>;
