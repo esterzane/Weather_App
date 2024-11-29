@@ -10,7 +10,7 @@ const createWeatherCard(weatherItem) {
             <h4> Temp: ${(weatherItem.main.temp - 273.1).toFixed(2)}°C</h4>;
             <h4>Wind: ${weatherItem.wind.speed} km/h</h4>;
             <h4>Humidity: ${weatherItem.main.humidity}%</h4>;
-            </li>';
+            </li>',
 }
 
 const getWeatherDetails = (cityName, lat, lon) => {
