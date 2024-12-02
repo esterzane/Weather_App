@@ -1,5 +1,6 @@
 const cityInput = document.querySelector(".city-input");
 const searchButton = document.querySelector(".search-btn");
+const currentWeatherDiv = document.quarySelector (".current-weather");
 const weatherCardsDiv = document.quarySelector (".weather-cards");
 const API_KEY = "22038a70491f6e8a843fa6f83a67e41a"; // 'PI key for OpenWeatherMap API
 
@@ -24,30 +25,28 @@ const getWeatherDetails = (cityName, lat, lon) => {
         const fiveDaysForecast = data.list.filter(forecast => {
             const forecastDate = new Date(forecast.dt_txt).getDate();
             if (!uniqueForecastDays.includes(forecastDate)) {
-                uniqueForecastDays.push(forecastDate);
-                return true; / Include this forecast in the result
+               return uniqueForecastDays.push(forecastDate);
             }
-            return false; // Skip duplicate dates
         });
-
-        console.log (fiveDaysForecast); / Log or process the filtered forecast
-        })
-
-        .catch(error => console.error('Error fetching weather data', error));
-    }; 
 
         // Clearing previous weather data 
 
         cityInput.value = ""; 
+        currentWeatherDiv.innerHTML = "";
         weatherCardsDiv.innerHTML = "";
         console.log(fiveDaysForecast);
-        fiveDaysForecast.forEach(weatherItem => {
-            weatherCardsDiv.insertAdjacentHTML("beforeend",  createWeatherCard());
+        fiveDaysForecast.forEach(weatherItem, item=> {
+            if (item === 0) {
+                weatherCardsDiv.insertAdjacentHTML("beforeend",  createWeatherCard());
+             }
+             else { 
+                weatherCardsDiv.insertAdjacentHTML("beforeend",  createWeatherCard());
+             }   
         });
-    }).catch(() => {
+        .catch(() => {
         alert("An error occured while fetching the weather forecast!");
     });
-}
+}; 
 
 const getCityCoordinates = () => {
     const cityName = cityInput.value.trim();
