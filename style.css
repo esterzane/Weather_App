@@ -116,6 +116,10 @@ h3 {
     font-weight: 300;
 }
 
+.current-weather .icon {
+  text-align: center;
+}
+
 .current-weather .icon img {
     max-width: 120px;
     margin-top: 5px; 
