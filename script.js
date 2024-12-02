@@ -3,7 +3,7 @@ const searchButton = document.querySelector(".search-btn");
 const locationButton = document.querySelector(".location-btn");
 const currentWeatherDiv = document.querySelector(".current-weather");
 const weatherCardsDiv = document.querySelector(".weather-cards");
-const API_KEY = "22038a70491f6e8a843fa6f83a67e41a"; // API key for OpenWeatherMap API
+const API_KEY = "55f565b522beb7dd4ccc2ff62f0e7d49"; // API key for OpenWeatherMap API
 
 const createWeatherCard = (cityName, weatherItem, index) => {
     if (index === 0) {
@@ -121,4 +121,4 @@ const getUserCoordinates = () => {
 
 locationButton.addEventListener("click", getUserCoordinates);
 searchButton.addEventListener("click", getCityCoordinates);
-cityInput.adEvenListener("keyup, e => key === "Enter" && getCityCoordinates()); 
+cityInput.addEventListener("keyup", e => e.key === "Enter" && getCityCoordinates());
