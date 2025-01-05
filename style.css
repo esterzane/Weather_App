@@ -11,7 +11,7 @@ h1 {
     background-color: #A6A3BE;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 2rem;
+    font-size: 5rem;
     font-family: "Rubik Scribble", system-ui;
     font-weight: 400;
     font-style: normal;
@@ -51,6 +51,7 @@ h3 {
 
 }
 .weather-input input {
+    padding-left: 10px;
     width: 100%;
     height: 44px;
     margin-bottom: 15px;
@@ -89,6 +90,7 @@ h3 {
 }
 .weather-data {
     width:100%;
+    flex: 1; 
 }
 
 .current-weather {
@@ -117,17 +119,21 @@ h3 {
 }
 
 .current-weather .icon {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 20px; 
 }
 
 .current-weather .icon img {
-    max-width: 120px;
+    max-width: 80px;
     margin-top: 5px; 
 }
 
 .current-weather .icon h6 {
-    margin-top: -10px;
+    margin: 0;
     text-transform: capitalize; 
+    font-size: 0.9rem;
 }
 
 .day-forecast { 
