@@ -14,5 +14,5 @@ API
 
 ## 
 
-![Website overview](/Users/zaneestere/Coding/Weather_App/Weather_App/assets/overview.png)
+![Website overview](assets/overview.png)
 
