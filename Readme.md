@@ -10,7 +10,7 @@ As a dedicated surfer, weather tools are integral to my daily life. This project
 HTML
 CSS
 JavaScript
-API
+Fetcn API
 
 ## 
 
